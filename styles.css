@@ -1,0 +1,127 @@
+/* Estilos del blog VivasSolar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #254b5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.presentacion, .entrada, #contacto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.entrada {
+    margin-top: 15px;
+}
+
+.tema {
+    color: #256b53;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.entrada h3 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #254b5a;
+    color: white;
+    padding: 9px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #386b7e;
+}
+
+#buscar {
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 7px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+}
+
+form input, form textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+#aviso {
+    color: #216343;
+}
+
+footer {
+    background-color: #254b5a;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    .presentacion, .entrada, #contacto {
+        padding: 14px;
+    }
+}

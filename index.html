@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivasSolar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>VivasSolar</h1>
+        <p>Un blog sobre energía solar, SCADA y PPC</p>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#entradas">Entradas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section class="presentacion">
+            <h2>Supervisión y control en plantas solares</h2>
+            <p>En este blog explico brevemente qué información se puede ver desde un
+               SCADA, qué acciones se pueden realizar y para qué sirve un PPC en
+               una planta fotovoltaica.</p>
+        </section>
+
+        <section id="entradas">
+            <h2>Entradas del blog</h2>
+            <label for="buscar">Buscar una entrada:</label>
+            <input type="search" id="buscar" placeholder="Escribe SCADA, PPC, alarmas...">
+            <p id="resultado"></p>
+
+            <article class="entrada">
+                <p class="tema">SCADA</p>
+                <h3>¿Qué podemos visualizar desde un SCADA?</h3>
+                <p>Un SCADA permite consultar información de los distintos equipos
+                   de una planta solar desde una misma aplicación.</p>
+                <div id="texto1" hidden>
+                    <p>Por ejemplo, se pueden visualizar:</p>
+                    <ul>
+                        <li>La potencia y la energía generada.</li>
+                        <li>El estado de los inversores y los centros de transformación.</li>
+                        <li>La irradiancia y otras medidas meteorológicas.</li>
+                        <li>Las alarmas y los fallos de comunicación.</li>
+                    </ul>
+                    <p>De esta forma se puede seguir la producción de la planta y
+                       detectar posibles incidencias.</p>
+                </div>
+                <button type="button" class="leer" data-texto="texto1">Leer más</button>
+            </article>
+
+            <article class="entrada">
+                <p class="tema">SCADA</p>
+                <h3>¿Qué se puede controlar desde un SCADA?</h3>
+                <p>Además de mostrar datos, un SCADA puede permitir al operador
+                   realizar determinadas acciones sobre la instalación.</p>
+                <div id="texto2" hidden>
+                    <p>Las funciones dependen de los equipos y de los permisos configurados.
+                       Algunas de ellas son:</p>
+                    <ul>
+                        <li>Enviar órdenes autorizadas de marcha y parada.</li>
+                        <li>Modificar consignas cuando está permitido.</li>
+                        <li>Reconocer alarmas después de revisarlas.</li>
+                        <li>Comprobar el resultado de una orden.</li>
+                    </ul>
+                    <p>El SCADA no sustituye las protecciones de seguridad de los equipos.</p>
+                </div>
+                <button type="button" class="leer" data-texto="texto2">Leer más</button>
+            </article>
+
+            <article class="entrada">
+                <p class="tema">PPC</p>
+                <h3>¿Qué es un PPC y cuál es su función?</h3>
+                <p>El PPC (Power Plant Controller) es un sistema que coordina el
+                   comportamiento eléctrico de una planta fotovoltaica.</p>
+                <div id="texto3" hidden>
+                    <p>El PPC recibe medidas de la instalación y envía consignas a los
+                       equipos que controla, como los inversores.</p>
+                    <ul>
+                        <li>Regula la potencia activa de la planta.</li>
+                        <li>Puede intervenir en el control de reactiva, tensión o factor de potencia.</li>
+                        <li>Coordina varios inversores para que trabajen conjuntamente.</li>
+                    </ul>
+                    <p>En resumen, el SCADA sirve para supervisar y operar, mientras que
+                       el PPC realiza la regulación automática según su configuración.</p>
+                </div>
+                <button type="button" class="leer" data-texto="texto3">Leer más</button>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2>¿Te interesa? Contacta con nosotros</h2>
+            <p>Si quieres saber más sobre supervisión SCADA o control PPC,
+               puedes escribir tu consulta en el siguiente formulario.</p>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required minlength="2">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="4" required minlength="10"></textarea>
+
+                <button type="submit">Comprobar consulta</button>
+                <p id="aviso"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>VivasSolar</p>
+        <p>Desarrollo de aplicaciones en Red - Actividad 1: Creación de un blog</p>
+    </footer>
+</body>
+</html>
