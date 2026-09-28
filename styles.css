@@ -111,17 +111,3 @@ footer {
     padding: 14px;
     font-size: 13px;
 }
-
-@media (max-width: 600px) {
-    header {
-        padding: 15px;
-    }
-
-    nav a {
-        margin: 0 5px;
-    }
-
-    .presentacion, .entrada, #contacto {
-        padding: 14px;
-    }
-}
